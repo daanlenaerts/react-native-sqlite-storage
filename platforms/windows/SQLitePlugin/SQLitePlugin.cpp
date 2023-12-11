@@ -552,6 +552,6 @@ namespace SQLitePlugin
 
     hstring SQLitePlugin::ResolveDbFilePath(const hstring dbFileName)
     {
-        return ApplicationData::Current().LocalFolder().Path() + L"\\" + dbFileName;
+        return dbFileName;
     }
 }
